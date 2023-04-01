@@ -37,7 +37,7 @@ public class Cliente {
 		return valorTotalAlugueis;
 	}
 
-	public double getPontosTotaisDeAlugadorFrequente() {
+	public int getPontosTotaisDeAlugadorFrequente() {
 		Iterator<Aluguel> alugueis = this.alugueis.iterator();
 		int pontosTotaisDeAlugadorFrequente = 0;
 

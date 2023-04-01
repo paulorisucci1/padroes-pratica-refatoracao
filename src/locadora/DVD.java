@@ -18,15 +18,18 @@ public class DVD implements Alugavel {
 	    this.titulo = titulo;
 	    setCodigoDePreco(codigoDePreco);
 	  }
-	 
+
+	  @Override
 	  public String getTitulo() {
 	    return titulo;
 	  }
-	 
+
+	  @Override
 	  public int getCodigoDePreco() {
 	    return classificacao.getCodigoPreco();
 	  }
-	 
+
+	  @Override
 	  public void setCodigoDePreco(int codigoDePreco) {
 		  switch (codigoDePreco) {
 			  case NORMAL -> {
@@ -41,10 +44,12 @@ public class DVD implements Alugavel {
 		  }
 	  }
 
+	  @Override
 	  public double getValorDoAluguel(int diasAlugado) {
 		  return classificacao.getValorDoAluguel(diasAlugado);
 	  }
 
+	  @Override
 	public int getPontosDeAlugadorFrequente(int diasAlugado) {
 		return classificacao.getPontosDeAlugadorFrequente(diasAlugado);
 	}

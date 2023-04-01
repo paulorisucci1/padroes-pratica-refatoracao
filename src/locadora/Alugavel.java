@@ -7,4 +7,8 @@ public interface Alugavel {
     double getValorDoAluguel(int diasAlugado);
 
     int getPontosDeAlugadorFrequente(int diasAlugado);
+
+    int getCodigoDePreco();
+
+    void setCodigoDePreco(int codigoDePreco);
 }

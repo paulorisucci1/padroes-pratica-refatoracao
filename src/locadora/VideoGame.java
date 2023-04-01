@@ -25,6 +25,7 @@ public class VideoGame implements Alugavel {
         setCodigoDePreco(codigoDePreco);
     }
 
+    @Override
     public void setCodigoDePreco(int codigoPreco) {
         switch (codigoPreco) {
             case NORMAL -> {
@@ -37,6 +38,11 @@ public class VideoGame implements Alugavel {
                 this.classificacao = new ClassificacaoOnline();
             }
         }
+    }
+
+    @Override
+    public int getCodigoDePreco() {
+        return classificacao.getCodigoPreco();
     }
 
     @Override
